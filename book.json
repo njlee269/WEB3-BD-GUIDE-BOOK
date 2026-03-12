@@ -1,0 +1,69 @@
+{
+  "title": "BD 2026 Guidebook",
+  "subtitle": "A practical operating manual for business developers in web3, with a global view and a Korea-led edge.",
+  "owner": "dsrv",
+  "builtFor": "A business development operator in the blockchain industry",
+  "date": "March 12, 2026",
+  "chapters": [
+    {
+      "slug": "cover",
+      "file": "chapters/00-cover.md",
+      "title": "Cover",
+      "description": "How to use this guide and what changed in 2025-2026."
+    },
+    {
+      "slug": "global-market-map",
+      "file": "chapters/01-global-market-map.md",
+      "title": "Global Market Map",
+      "description": "Where the real money, urgency, and buyer budgets are forming."
+    },
+    {
+      "slug": "business-models",
+      "file": "chapters/02-business-models.md",
+      "title": "Business Models That Matter",
+      "description": "The hottest and most durable BMs in web3 right now."
+    },
+    {
+      "slug": "regulation",
+      "file": "chapters/03-regulation.md",
+      "title": "Regulation And Market Structure",
+      "description": "What a BD must know to avoid wasting cycles and to win regulated deals."
+    },
+    {
+      "slug": "korea-playbook",
+      "file": "chapters/04-korea-playbook.md",
+      "title": "Korea-Led Strategy",
+      "description": "How to think from Korea outward instead of copying U.S. narratives."
+    },
+    {
+      "slug": "bd-operator-manual",
+      "file": "chapters/05-bd-operator-manual.md",
+      "title": "BD Operator Manual",
+      "description": "How to run pipeline, partnerships, discovery, and close motion."
+    },
+    {
+      "slug": "study-curriculum",
+      "file": "chapters/06-study-curriculum.md",
+      "title": "12-Week Study Curriculum",
+      "description": "A detailed study guide with weekly outputs and learning goals."
+    },
+    {
+      "slug": "scorecards",
+      "file": "chapters/07-scorecards.md",
+      "title": "Scorecards And Templates",
+      "description": "Reusable frameworks for partner qualification and account planning."
+    },
+    {
+      "slug": "career-positioning",
+      "file": "chapters/08-career-positioning.md",
+      "title": "Career Positioning",
+      "description": "How to position yourself for senior BD and strategic roles."
+    },
+    {
+      "slug": "sources",
+      "file": "chapters/09-sources.md",
+      "title": "Sources And Ongoing Reading",
+      "description": "A source map and reading stack anchored to current official references."
+    }
+  ]
+}
