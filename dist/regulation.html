@@ -6,6 +6,7 @@
     <title>Regulation And Market Structure | BD 2026 Guidebook</title>
     <meta name="description" content="What a BD must know to avoid wasting cycles and to win regulated deals." />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -174,7 +175,32 @@
 <p>You should understand the role of:</p>
 <ul><li>issuers</li><li>custodians</li><li>banks</li><li>broker-dealers and securities firms</li><li>exchanges and OTC desks</li><li>market makers</li><li>wallet infrastructure providers</li><li>compliance vendors</li><li>payment service providers</li></ul>
 <p>If you cannot map those players, you will not see where your product actually fits.</p>
+<h2 id="jurisdiction-snapshot">Jurisdiction snapshot</h2>
+<div class="diagram"><pre class="mermaid">graph LR
+    subgraph US["United States"]
+        US1[Stablecoin policy\nadvanced in 2025]
+        US2[Federal vs state\nperimeter still matters]
+    end
+    subgraph EU["European Union"]
+        EU1[MiCA framework\nin effect]
+        EU2[Licensed entities =\nbetter partners]
+    end
+    subgraph APAC["HK & Singapore"]
+        AP1[Stablecoin & custody\nrules maturing]
+        AP2[Asian reference\npoints for institutions]
+    end
+    subgraph KR["Korea"]
+        KR1[Banking relationships\nare the practical gate]
+        KR2[Institutional participation\ngrowing]
+    end</pre></div>
 <h2 id="the-five-regulatory-questions-to-ask-before-serious-bd">The five regulatory questions to ask before serious BD</h2>
+<div class="diagram"><pre class="mermaid">flowchart TD
+    Q1[Is the asset or workflow\nlegal in this market?]
+    Q2[Does the customer need\na license or regulated partner?]
+    Q3[Who is the custodian,\nissuer, or settlement principal?]
+    Q4[What AML, KYC, travel rule,\nor reporting requirements attach?]
+    Q5[Which part breaks\nif the bank says no?]
+    Q1 --> Q2 --> Q3 --> Q4 --> Q5 --> OK[Safe to proceed\nwith deal design]</pre></div>
 <ol><li>Is the asset or workflow clearly legal in the target market?</li><li>Does the customer need a license or regulated partner to use the product?</li><li>Which entity is the merchant of record, custodian, issuer, or settlement principal?</li><li>What AML, KYC, travel rule, or reporting requirements attach?</li><li>Which part of the design breaks if the bank says no?</li></ol>
 <h2 id="how-regulation-changes-messaging">How regulation changes messaging</h2>
 <p>Weak BD messaging:</p>
@@ -194,7 +220,7 @@
     <aside class="page-toc">
       <p class="eyebrow">On this page</p>
       <ul>
-        <li class="toc-level-1"><a href="#regulation-and-market-structure">Regulation And Market Structure</a></li><li class="toc-level-2"><a href="#why-bd-needs-regulatory-fluency">Why BD needs regulatory fluency</a></li><li class="toc-level-2"><a href="#your-minimum-operating-model">Your minimum operating model</a></li><li class="toc-level-2"><a href="#united-states">United States</a></li><li class="toc-level-2"><a href="#european-union">European Union</a></li><li class="toc-level-2"><a href="#hong-kong-and-singapore">Hong Kong and Singapore</a></li><li class="toc-level-2"><a href="#korea">Korea</a></li><li class="toc-level-2"><a href="#market-structure-knowledge-every-bd-should-build">Market structure knowledge every BD should build</a></li><li class="toc-level-2"><a href="#the-five-regulatory-questions-to-ask-before-serious-bd">The five regulatory questions to ask before serious BD</a></li><li class="toc-level-2"><a href="#how-regulation-changes-messaging">How regulation changes messaging</a></li><li class="toc-level-2"><a href="#working-rule">Working rule</a></li>
+        <li class="toc-level-1"><a href="#regulation-and-market-structure">Regulation And Market Structure</a></li><li class="toc-level-2"><a href="#why-bd-needs-regulatory-fluency">Why BD needs regulatory fluency</a></li><li class="toc-level-2"><a href="#your-minimum-operating-model">Your minimum operating model</a></li><li class="toc-level-2"><a href="#united-states">United States</a></li><li class="toc-level-2"><a href="#european-union">European Union</a></li><li class="toc-level-2"><a href="#hong-kong-and-singapore">Hong Kong and Singapore</a></li><li class="toc-level-2"><a href="#korea">Korea</a></li><li class="toc-level-2"><a href="#market-structure-knowledge-every-bd-should-build">Market structure knowledge every BD should build</a></li><li class="toc-level-2"><a href="#jurisdiction-snapshot">Jurisdiction snapshot</a></li><li class="toc-level-2"><a href="#the-five-regulatory-questions-to-ask-before-serious-bd">The five regulatory questions to ask before serious BD</a></li><li class="toc-level-2"><a href="#how-regulation-changes-messaging">How regulation changes messaging</a></li><li class="toc-level-2"><a href="#working-rule">Working rule</a></li>
       </ul>
     </aside>
   

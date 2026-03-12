@@ -2,6 +2,23 @@
 
 ## Opportunity scorecard
 
+```mermaid
+graph TD
+    subgraph Factors["Score each factor 1–5  max total = 35"]
+        F1[Pain Intensity]
+        F2[Budget Owner Clarity]
+        F3[Regulatory Feasibility]
+        F4[Bankability]
+        F5[Implementation Burden]
+        F6[Expansion Potential]
+        F7[Strategic Reference Value]
+    end
+    F1 & F2 & F3 & F4 & F5 & F6 & F7 --> T{Total Score}
+    T -->|"28 or above"| GO[Strong Priority]
+    T -->|"22 to 27"| MID[Keep in Motion]
+    T -->|"21 or below"| SKIP[Likely Distraction]
+```
+
 Score each opportunity from 1 to 5 on:
 
 - pain intensity

@@ -14,6 +14,16 @@ It is a disciplined system for:
 
 ## The BD stack
 
+```mermaid
+graph TD
+    BD[BD Operating Stack]
+    BD --> M["1. Market Thesis\nWho, what, why now — one page"]
+    BD --> A["2. Account Selection\nAttributes over social graph"]
+    BD --> D["3. Discovery\nSurface pain, not present product"]
+    BD --> DA["4. Deal Architecture\nLegal, custody, metrics, pilot scope"]
+    BD --> PC["5. Post-Close Expansion\nSecond workflow, platform dependency"]
+```
+
 You need five layers:
 
 - market thesis
@@ -157,6 +167,28 @@ A good partner has at least one of:
 If a partner has none of those, it is mostly logo theater.
 
 ## 30-60-90 day operator plan
+
+```mermaid
+flowchart LR
+    subgraph D1["Days 1–30: Orient"]
+        A1[Map market\n& segment buyers]
+        A2[Build target\naccount list]
+        A3[Learn regulatory\nbasics]
+        A4[Refine value\nproposition]
+    end
+    subgraph D2["Days 31–60: Qualify"]
+        B1[Run structured\ndiscovery]
+        B2[Identify pilot\nuse case]
+        B3[Build internal\nplaybooks]
+        B4[Qualify out\nweak deals]
+    end
+    subgraph D3["Days 61–90: Execute"]
+        C1[Push to executable\npilot design]
+        C2[Document objections\n& responses]
+        C3[Build weekly\nreporting cadence]
+    end
+    D1 --> D2 --> D3
+```
 
 ## First 30 days
 

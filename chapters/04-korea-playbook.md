@@ -125,6 +125,16 @@ Useful channels in Korea can include:
 
 ## Your Korea-outward expansion playbook
 
+```mermaid
+flowchart LR
+    A["1. Validate\nKorean use case\nwith real buyer pain"]
+    B["2. Add credibility\nanchors\nlegal, bank, partner"]
+    C["3. Build operational\nworkflow\nnot just a pilot"]
+    D["4. Export the\nKorean case study"]
+    E["5. Japan · HK\nSingapore · Global"]
+    A --> B --> C --> D --> E
+```
+
 Use this order:
 
 1. Validate the use case with a Korean buyer segment that already feels the pain.

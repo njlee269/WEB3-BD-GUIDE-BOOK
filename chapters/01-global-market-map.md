@@ -2,6 +2,16 @@
 
 ## The current value map
 
+```mermaid
+flowchart LR
+    BD[2026 BD\nPriority Lanes]
+    BD --> L1[Lane 1\nStablecoin\nPayments]
+    BD --> L2[Lane 2\nTokenization\n& RWA]
+    BD --> L3[Lane 3\nCompliance\n& Custody]
+    BD --> L4[Lane 4\nData &\nAnalytics]
+    BD --> L5[Lane 5\nSpecialized\nInfra]
+```
+
 A useful BD lens is simple:
 
 - Where is money moving?
@@ -138,6 +148,14 @@ These areas are not necessarily dead, but they are weaker as default BD prioriti
 - protocol grants as a substitute for actual revenue
 
 ## How to think globally
+
+```mermaid
+flowchart LR
+    P["Policy Layer\nWhich jurisdictions\nare opening or tightening?"]
+    B["Buyer Layer\nWhich buyer types are active?\nWho owns the budget?"]
+    D["Distribution Layer\nWhich channels deliver\nrepeatable customers?"]
+    P --> B --> D
+```
 
 A good global BD frame has three layers:
 

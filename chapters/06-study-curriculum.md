@@ -12,6 +12,31 @@ You should produce artifacts weekly.
 
 That is how you convert knowledge into career leverage.
 
+## 12-week overview
+
+```mermaid
+flowchart LR
+    subgraph Ph1["Phase 1: Foundation  Weeks 1–4"]
+        W1[Wk 1\nIndustry Map]
+        W2[Wk 2\nStablecoin\nEconomics]
+        W3[Wk 3\nPayments\nMarket]
+        W4[Wk 4\nTokenization\n& STO]
+    end
+    subgraph Ph2["Phase 2: Technical  Weeks 5–8"]
+        W5[Wk 5\nRegulation]
+        W6[Wk 6\nCustody &\nControls]
+        W7[Wk 7\nCompliance\nStack]
+        W8[Wk 8\nKorea-Led\nThesis]
+    end
+    subgraph Ph3["Phase 3: Execution  Weeks 9–12"]
+        W9[Wk 9\nBD Discovery]
+        W10[Wk 10\nDeal Design]
+        W11[Wk 11\nThought\nLeadership]
+        W12[Wk 12\nCareer\nPackaging]
+    end
+    Ph1 --> Ph2 --> Ph3
+```
+
 ## Weekly cadence
 
 - Monday: market reading and note consolidation

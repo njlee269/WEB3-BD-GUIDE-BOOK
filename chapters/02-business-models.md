@@ -2,6 +2,20 @@
 
 ## How to evaluate a web3 BM
 
+```mermaid
+flowchart TD
+    BM[Evaluate the Business Model]
+    BM --> F1[Buyer urgency]
+    BM --> F2[Willingness to pay]
+    BM --> F3[Regulatory clarity]
+    BM --> F4[Distribution difficulty]
+    BM --> F5[Gross margin quality]
+    BM --> F6[Durability after hype]
+    F1 & F2 & F3 & F4 & F5 & F6 --> S{4 or more filters\npass strongly?}
+    S -->|Yes| GO[Strong BM candidate]
+    S -->|No| WAIT[Too early or too crowded]
+```
+
 Use six filters:
 
 - buyer urgency
@@ -209,6 +223,19 @@ Strong for:
 - when the buyer is another startup with no durable spending power
 
 ## Ranking the hottest BMs for 2026
+
+```mermaid
+graph TD
+    subgraph Ranking["2026 BM Priority — Highest to Lowest"]
+        R1["#1  Stablecoin Payments & Treasury Infra"]
+        R2["#2  Tokenization, RWA & STO Rails"]
+        R3["#3  Custody, Compliance & Enterprise Controls"]
+        R4["#4  Institutional Staking & Validator Services"]
+        R5["#5  Specialized Data & Intelligence Products"]
+        R6["#6  Infrastructure with Distribution Attached"]
+        R1 --> R2 --> R3 --> R4 --> R5 --> R6
+    end
+```
 
 If the question is commercial heat plus durability, the order is:
 

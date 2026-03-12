@@ -6,6 +6,7 @@
     <title>Business Models That Matter | BD 2026 Guidebook</title>
     <meta name="description" content="The hottest and most durable BMs in web3 right now." />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -139,6 +140,17 @@
           <article class="page-content">
             <h1 id="business-models-that-matter">Business Models That Matter</h1>
 <h2 id="how-to-evaluate-a-web3-bm">How to evaluate a web3 BM</h2>
+<div class="diagram"><pre class="mermaid">flowchart TD
+    BM[Evaluate the Business Model]
+    BM --> F1[Buyer urgency]
+    BM --> F2[Willingness to pay]
+    BM --> F3[Regulatory clarity]
+    BM --> F4[Distribution difficulty]
+    BM --> F5[Gross margin quality]
+    BM --> F6[Durability after hype]
+    F1 & F2 & F3 & F4 & F5 & F6 --> S{4 or more filters\npass strongly?}
+    S -->|Yes| GO[Strong BM candidate]
+    S -->|No| WAIT[Too early or too crowded]</pre></div>
 <p>Use six filters:</p>
 <ul><li>buyer urgency</li><li>willingness to pay</li><li>regulatory clarity</li><li>distribution difficulty</li><li>gross margin quality</li><li>durability after hype fades</li></ul>
 <p>The best 2026 models usually score well on at least four of the six.</p>
@@ -203,6 +215,16 @@
 <h3 id="when-it-fails">When it fails</h3>
 <ul><li>when the tool is technically elegant but not required for budget approval</li><li>when the buyer is another startup with no durable spending power</li></ul>
 <h2 id="ranking-the-hottest-bms-for-2026">Ranking the hottest BMs for 2026</h2>
+<div class="diagram"><pre class="mermaid">graph TD
+    subgraph Ranking["2026 BM Priority — Highest to Lowest"]
+        R1["#1  Stablecoin Payments & Treasury Infra"]
+        R2["#2  Tokenization, RWA & STO Rails"]
+        R3["#3  Custody, Compliance & Enterprise Controls"]
+        R4["#4  Institutional Staking & Validator Services"]
+        R5["#5  Specialized Data & Intelligence Products"]
+        R6["#6  Infrastructure with Distribution Attached"]
+        R1 --> R2 --> R3 --> R4 --> R5 --> R6
+    end</pre></div>
 <p>If the question is commercial heat plus durability, the order is:</p>
 <ol><li>Stablecoin payments and treasury infrastructure</li><li>Tokenization, RWA operations, and STO rails</li><li>Custody, compliance, and enterprise controls</li><li>Institutional staking and validator services with distribution</li><li>Specialized data and intelligence products</li><li>Infrastructure that has distribution attached</li></ol>
 <h2 id="mental-model-for-bd">Mental model for BD</h2>

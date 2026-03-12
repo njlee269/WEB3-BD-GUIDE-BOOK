@@ -98,7 +98,39 @@ You should understand the role of:
 
 If you cannot map those players, you will not see where your product actually fits.
 
+## Jurisdiction snapshot
+
+```mermaid
+graph LR
+    subgraph US["United States"]
+        US1[Stablecoin policy\nadvanced in 2025]
+        US2[Federal vs state\nperimeter still matters]
+    end
+    subgraph EU["European Union"]
+        EU1[MiCA framework\nin effect]
+        EU2[Licensed entities =\nbetter partners]
+    end
+    subgraph APAC["HK & Singapore"]
+        AP1[Stablecoin & custody\nrules maturing]
+        AP2[Asian reference\npoints for institutions]
+    end
+    subgraph KR["Korea"]
+        KR1[Banking relationships\nare the practical gate]
+        KR2[Institutional participation\ngrowing]
+    end
+```
+
 ## The five regulatory questions to ask before serious BD
+
+```mermaid
+flowchart TD
+    Q1[Is the asset or workflow\nlegal in this market?]
+    Q2[Does the customer need\na license or regulated partner?]
+    Q3[Who is the custodian,\nissuer, or settlement principal?]
+    Q4[What AML, KYC, travel rule,\nor reporting requirements attach?]
+    Q5[Which part breaks\nif the bank says no?]
+    Q1 --> Q2 --> Q3 --> Q4 --> Q5 --> OK[Safe to proceed\nwith deal design]
+```
 
 1. Is the asset or workflow clearly legal in the target market?
 2. Does the customer need a license or regulated partner to use the product?

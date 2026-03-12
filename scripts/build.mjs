@@ -92,8 +92,12 @@ function parseMarkdown(markdown) {
       return;
     }
 
-    const language = codeFence ? ` class="language-${escapeHtml(codeFence)}"` : "";
-    html.push(`<pre><code${language}>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+    if (codeFence === "mermaid") {
+      html.push(`<div class="diagram"><pre class="mermaid">${codeLines.join("\n")}</pre></div>`);
+    } else {
+      const language = codeFence ? ` class="language-${escapeHtml(codeFence)}"` : "";
+      html.push(`<pre><code${language}>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+    }
     codeFence = null;
     codeLines = [];
   }
@@ -270,6 +274,7 @@ function getPageShell({ title, description, body, headings, currentSlug, previou
     <title>${escapeHtml(title)} | ${escapeHtml(book.title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -320,6 +325,7 @@ function getIndexShell({ coverHtml, chapters }) {
     <title>${escapeHtml(book.title)}</title>
     <meta name="description" content="${escapeHtml(book.subtitle)}" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -378,6 +384,7 @@ function getPrintShell(chapters) {
     <title>${escapeHtml(book.title)} | Printable Book</title>
     <meta name="description" content="${escapeHtml(book.subtitle)}" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body class="print-body">
     <main class="print-book">

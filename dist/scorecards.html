@@ -6,6 +6,7 @@
     <title>Scorecards And Templates | BD 2026 Guidebook</title>
     <meta name="description" content="Reusable frameworks for partner qualification and account planning." />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -139,6 +140,20 @@
           <article class="page-content">
             <h1 id="scorecards-and-templates">Scorecards And Templates</h1>
 <h2 id="opportunity-scorecard">Opportunity scorecard</h2>
+<div class="diagram"><pre class="mermaid">graph TD
+    subgraph Factors["Score each factor 1–5  max total = 35"]
+        F1[Pain Intensity]
+        F2[Budget Owner Clarity]
+        F3[Regulatory Feasibility]
+        F4[Bankability]
+        F5[Implementation Burden]
+        F6[Expansion Potential]
+        F7[Strategic Reference Value]
+    end
+    F1 & F2 & F3 & F4 & F5 & F6 & F7 --> T{Total Score}
+    T -->|"28 or above"| GO[Strong Priority]
+    T -->|"22 to 27"| MID[Keep in Motion]
+    T -->|"21 or below"| SKIP[Likely Distraction]</pre></div>
 <p>Score each opportunity from 1 to 5 on:</p>
 <ul><li>pain intensity</li><li>budget owner clarity</li><li>regulatory feasibility</li><li>bankability</li><li>implementation burden</li><li>expansion potential</li><li>strategic reference value</li></ul>
 <p>Interpretation:</p>

@@ -6,6 +6,7 @@
     <title>BD Operator Manual | BD 2026 Guidebook</title>
     <meta name="description" content="How to run pipeline, partnerships, discovery, and close motion." />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'base',themeVariables:{primaryColor:'#efe3cf',primaryTextColor:'#1f2430',primaryBorderColor:'#b85c38',lineColor:'#5d6677',secondaryColor:'#f7f1e7',background:'#f7f1e7',fontSize:'14px'}});</script>
   </head>
   <body>
     <div class="site-shell">
@@ -143,6 +144,13 @@
 <p>It is a disciplined system for:</p>
 <ul><li>selecting the right market</li><li>prioritizing accounts</li><li>discovering real pain</li><li>converting interest into an executable commercial motion</li><li>coordinating legal, product, operations, and management to close</li></ul>
 <h2 id="the-bd-stack">The BD stack</h2>
+<div class="diagram"><pre class="mermaid">graph TD
+    BD[BD Operating Stack]
+    BD --> M["1. Market Thesis\nWho, what, why now — one page"]
+    BD --> A["2. Account Selection\nAttributes over social graph"]
+    BD --> D["3. Discovery\nSurface pain, not present product"]
+    BD --> DA["4. Deal Architecture\nLegal, custody, metrics, pilot scope"]
+    BD --> PC["5. Post-Close Expansion\nSecond workflow, platform dependency"]</pre></div>
 <p>You need five layers:</p>
 <ul><li>market thesis</li><li>account selection</li><li>discovery</li><li>deal architecture</li><li>post-close expansion</li></ul>
 <h2 id="1-market-thesis">1. Market thesis</h2>
@@ -189,6 +197,25 @@
 <ul><li>distribution</li><li>regulatory cover</li><li>liquidity</li><li>banking access</li><li>implementation leverage</li><li>credibility with your buyer</li></ul>
 <p>If a partner has none of those, it is mostly logo theater.</p>
 <h2 id="30-60-90-day-operator-plan">30-60-90 day operator plan</h2>
+<div class="diagram"><pre class="mermaid">flowchart LR
+    subgraph D1["Days 1–30: Orient"]
+        A1[Map market\n& segment buyers]
+        A2[Build target\naccount list]
+        A3[Learn regulatory\nbasics]
+        A4[Refine value\nproposition]
+    end
+    subgraph D2["Days 31–60: Qualify"]
+        B1[Run structured\ndiscovery]
+        B2[Identify pilot\nuse case]
+        B3[Build internal\nplaybooks]
+        B4[Qualify out\nweak deals]
+    end
+    subgraph D3["Days 61–90: Execute"]
+        C1[Push to executable\npilot design]
+        C2[Document objections\n& responses]
+        C3[Build weekly\nreporting cadence]
+    end
+    D1 --> D2 --> D3</pre></div>
 <h2 id="first-30-days">First 30 days</h2>
 <ul><li>map the market and segment the buyer types</li><li>build a target account list</li><li>learn the core regulatory questions</li><li>refine the value proposition into plain business language</li></ul>
 <h2 id="next-30-days">Next 30 days</h2>
