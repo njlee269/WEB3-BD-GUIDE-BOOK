@@ -35,3 +35,16 @@ Then open `http://localhost:4173`.
 ## GitHub
 
 See `GITHUB_SETUP.md` for the private repo workflow.
+
+## GitHub Pages
+
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` that builds the book and deploys `dist/` to GitHub Pages on every push to `main`.
+
+To activate it in GitHub:
+
+1. Open the repository settings.
+2. Go to `Settings -> Pages`.
+3. Set the source to `GitHub Actions`.
+4. Push to `main` or run the workflow manually from the `Actions` tab.
+
+The Pages URL will appear in the workflow summary after deployment.

@@ -35,3 +35,24 @@ Because you asked for a private offline study guide, the simplest deployment tar
 - A private Vercel project if you want authenticated web access
 
 GitHub Pages is not the best default here because your requirement is specifically private and offline-first.
+
+## GitHub Actions deployment
+
+This repository now includes `.github/workflows/deploy-pages.yml`.
+
+It will:
+
+- build the book with `npm run build`
+- upload `dist/` as a Pages artifact
+- deploy the generated site to GitHub Pages
+
+To enable it:
+
+1. Open the repository on GitHub.
+2. Go to `Settings -> Pages`.
+3. Under build and deployment, choose `GitHub Actions`.
+4. Push a commit to `main`, or run the workflow manually from the `Actions` tab.
+
+Important note:
+
+- GitHub's private Pages access control is not the default path for a user-owned private repository. If you need strict private web access, use an authenticated private host instead of assuming Pages access will stay private.
